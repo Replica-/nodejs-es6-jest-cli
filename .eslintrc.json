@@ -1,0 +1,27 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "comma-dangle": 0,
+        "quotes": [ 0, "single" ],
+        "no-undef": 1,
+        "global-strict": 0,
+        "no-extra-semi": 1,
+        "no-underscore-dangle": 0,
+        "no-console": 0,
+        "no-unused-vars": 1,
+        "no-trailing-spaces": [1, { "skipBlankLines": true }],
+        "no-unreachable": 1,
+        "no-alert": 0
+    }
+
+}
