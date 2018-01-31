@@ -1,0 +1,22 @@
+{
+  "name": "robot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Daniel Santoro Robot Challenge",
+  "main": "",
+  "scripts": {
+    "dist": "babel src -d dist; node dist/index.js",
+    "start": "eslint src; babel-node src/index.js",
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4",
+    "mock-stdin": "^0.3.1",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
