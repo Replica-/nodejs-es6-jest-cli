@@ -2,7 +2,7 @@
   "name": "robot",
   "private": true,
   "version": "1.0.0",
-  "description": "Daniel Santoro Robot Challenge",
+  "description": "Daniel Santoro Toy robot simulator",
   "main": "",
   "scripts": {
     "dist": "babel src -d dist; node dist/index.js",

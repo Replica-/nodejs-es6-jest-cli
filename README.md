@@ -4,7 +4,7 @@
 
 This repo contains a Toy Robot Simulator coded in Node.JS ES6 (Babel) + Jest + ESLint.
 
-This solution is by no means perfectly unit tested and 100% type checked. Given the reasonable amount of time I allowed, this is a reasonable representation of my abilities when it comes to Javascript and CLI. I took this opportunity to learn Jest and as a result made some OOP design decisions that I probably would normally not have.
+This solution is by no means perfectly unit tested and 100% type checked. Given the amount of time I allowed, this is a reasonable representation of my abilities when it comes to Javascript and CLI. I took this opportunity to learn Jest and as a result made some OOP design decisions that I probably would normally not have.
 
 If I was able to spend more time on this project and it satisfied the scope,
  - I would have ensured that functions were properly test covered, 
