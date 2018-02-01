@@ -3,14 +3,27 @@
 import { facing, direction, vector, Point } from './consts.js';
 import { type } from './common.js';
 
+/*
+* This is just a simple toy robot doing simple toy robot things.
+*
+* A robot keeps track of his own world.
+* A robot is directly fed commands to it by the translator. A command includes PLACE, MOVE, LEFT, REPORT, RIGHT.
+* A robot must be placed first.
+* A robot cannot move off the world.
+*/
+
 class Robot {
 
 	constructor() {
+    // Is the robot placed
 		this._placed = false;
-		this._position = new Point(0,0);
+    // Initialise position of the robot
+		this._position = new Point(-1,-1);
 
 		// No need for a 2D array. Two integers should be enough represent the world as there no obstructions
+    // Hardcoded, dynamic table size is out of scope.
 		this._bounds = new Point(0,5);
+    //Initialise the facing
 		this._facing = facing.NONE;
 	}
 
@@ -29,6 +42,7 @@ class Robot {
 			throw new Error("Point.withinBounds expects point")
 		}
 
+    // If the robot is placed within bounds, then place it, set position and set its facing.
 		if (newPosition.withinBounds(this.bounds)) {
 			this.placed = true;
 			this.position = newPosition;
@@ -94,6 +108,12 @@ class Robot {
 		}
 	}
 
+  /**
+  * REPORT the position of the toy via console
+  * Cannot occur unless the robot has been placed.
+  *
+  * @return boolean
+  */
 	report() {
 		if (!this.placed) {
 			return false;
@@ -119,6 +139,7 @@ class Robot {
 		}
 
 		console.log("I AM AT [" +	this.position.x + "," + this.position.y + "] facing " + facingText);
+    return true;
 	}
 
 	/* Various set / getters to keep in the spirit of ES6 Classes*/

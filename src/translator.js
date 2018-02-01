@@ -2,10 +2,15 @@
 
 import { direction, facing, Point } from './consts.js';
 
+/*
+* The translator class handles input from a stdin equivalent stream and feeds the commands to it's designated robot
+*/
 export default class translator {
 
 	constructor() {
+		// Is the translator running
 		this._active = false;
+		// Robot to give commands to
 		this._robot = null;
 	}
 

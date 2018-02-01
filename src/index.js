@@ -1,5 +1,9 @@
 'use strict';
 
+/*
+* Main driver for the robot.
+*/
+
 import Translator from './translator.js';
 import Robot from './robot.js';
 

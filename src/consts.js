@@ -1,6 +1,9 @@
 'use strict';
+/*
+* Consts is just a collection of 2d point/facing/direction constants that the robot uses to understand how to navigate the table.
+*/
 
-// Basic point class
+// Basic point class holds X,Y or min/max for cheeky code readability
 export class Point {
 	constructor(x,y) {
 		this._x = x;
